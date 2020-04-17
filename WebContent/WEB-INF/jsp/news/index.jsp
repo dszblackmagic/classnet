@@ -74,7 +74,7 @@
 							<div class="clearbox"></div>
 							<div class="c_spacing"></div>
 							<div class="r_ad">
-								<a href="#"><img src="<f:message key="image_http_url"/>/images/rightAD2.jpg" alt="数字图像处理" border="0"/></a>
+								<a href="/classnet/course/"><img src="<f:message key="image_http_url"/>/images/rightAD2.jpg" alt="数字图像处理" border="0"/></a>
 							</div>
 							<div class="childclass_main">
 								<!-- 栏目循环列表开始 -->
