@@ -21,6 +21,9 @@ else if(url.indexOf("/teacher/")!=-1){
 } 
 else if(url.indexOf("/master/")!=-1){
 	index="master";
+}
+else if(url.indexOf("/teacher/")!=-1){
+	index="teacher";
 } 
 if(index=="index"){
 	document.write('<li id="topTabOn"><a href="<c:url value="/"/>"><span>网站首页</span></a></li>');

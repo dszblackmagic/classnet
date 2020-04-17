@@ -196,6 +196,7 @@
 	
 	<!-- 教师队伍 -->
 	<bean name="/teacher/index" class="com.classnet.action.teacher.TeacherIndexAction">
-		
 	</bean>
+	<!-- 数字图像课程 -->
+	<bean name="/course/index" class="com.classnet.action.course.CourseIndexAction"></bean>
 </beans>
