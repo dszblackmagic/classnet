@@ -76,5 +76,11 @@ if(index=="course"){
 else{
 	document.write('<li><a href="<c:url value="/course/"/>"><span>数字图像课程</span></a></li>');
 }
+if(index=="question"){
+	document.write('<li id="topTabOn"><a href="<c:url value="/question/"/>"><span>在线测试</span></a></li>');
+}
+else{
+	document.write('<li><a href="<c:url value="/question/"/>"><span>在线测试</span></a></li>');
+}
 </script>
 </ul>

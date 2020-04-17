@@ -39,7 +39,13 @@
   			type="org.springframework.web.struts.DelegatingActionProxy">
   		<forward name="index" path="/WEB-INF/jsp/course/index.jsp"></forward>
   	</action>
+  	<!-- 在线测试 -->
+  	<action path="/question/index"
+  			scope="request"
+  			type="org.springframework.web.struts.DelegatingActionProxy">
   	
+  		<forward name="index" path="/WEB-INF/jsp/question/index.jsp"></forward>
+  	</action>
   	
   	
     <!-- 课程中心 -->
