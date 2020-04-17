@@ -199,4 +199,6 @@
 	</bean>
 	<!-- 数字图像课程 -->
 	<bean name="/course/index" class="com.classnet.action.course.CourseIndexAction"></bean>
+	<!-- 在线问题 -->
+	<bean name="/question/index" class="com.classnet.action.question.QuestionIndexAction"></bean>
 </beans>
