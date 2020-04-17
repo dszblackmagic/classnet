@@ -25,6 +25,23 @@
   			type="org.springframework.web.struts.DelegatingActionProxy">
   		<forward name="succ" path="/WEB-INF/jsp/news/menu.jsp"></forward>		
   	</action>
+  	
+  	<!-- 教师队伍 -->
+  	<action path="/teacher/index"
+  			scope="request"
+  			type="org.springframework.web.struts.DelegatingActionProxy">
+  		<forward name="index" path="/WEB-INF/jsp/teacher/teacher.jsp"></forward>
+  	</action>
+  	
+  	<!-- 数字图像课程介绍 -->
+  	<action path="/course/index"
+  			scope="request"
+  			type="org.springframework.web.struts.DelegatingActionProxy">
+  		<forward name="index" path="/WEB-INF/jsp/course/index.jsp"></forward>
+  	</action>
+  	
+  	
+  	
     <!-- 课程中心 -->
     <action path="/clazz/index"
   			scope="request"

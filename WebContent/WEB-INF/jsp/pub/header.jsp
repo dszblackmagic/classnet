@@ -16,8 +16,14 @@ else if(url.indexOf("/source/")!=-1){
 else if(url.indexOf("/topic/")!=-1){
 	index="topic";
 } 
+else if(url.indexOf("/teacher/")!=-1){
+	index="teacher";
+} 
 else if(url.indexOf("/master/")!=-1){
 	index="master";
+}
+else if(url.indexOf("/teacher/")!=-1){
+	index="teacher";
 } 
 if(index=="index"){
 	document.write('<li id="topTabOn"><a href="<c:url value="/"/>"><span>网站首页</span></a></li>');
@@ -54,6 +60,12 @@ if(index=="master"){
 }
 else{
 	document.write('<li><a href="<c:url value="/master/"/>"><span>个人中心</span></a></li>');
+}
+if(index=="teacher"){
+	document.write('<li id="topTabOn"><a href="<c:url value="/teacher/"/>"><span>教师队伍</span></a></li>');
+}
+else{
+	document.write('<li><a href="<c:url value="/teacher/"/>"><span>教师队伍</span></a></li>');
 }
 </script>
 </ul>
