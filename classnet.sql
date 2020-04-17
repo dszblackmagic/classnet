@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50720
 File Encoding         : 65001
 
-Date: 2020-04-17 11:35:56
+Date: 2020-04-17 13:42:20
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -282,27 +282,6 @@ CREATE TABLE `topic_table` (
 INSERT INTO `topic_table` VALUES ('2', 'java好好学啊', '2013-04-27 18:51:40', '&nbsp;哈哈', '1', 'user2', '2013-04-27 18:51:53', '1', '3');
 
 -- ----------------------------
--- Table structure for user_table
--- ----------------------------
-DROP TABLE IF EXISTS `user_table`;
-CREATE TABLE `user_table` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `username` varchar(50) NOT NULL,
-  `password` varchar(50) NOT NULL,
-  `authorite` varchar(50) NOT NULL,
-  `enable` bit(1) DEFAULT NULL,
-  `email` varchar(50) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
-
--- ----------------------------
--- Records of user_table
--- ----------------------------
-INSERT INTO `user_table` VALUES ('1', 'admin', '123', 'ROLE_SUPERVISOR', '', '123@126.com');
-INSERT INTO `user_table` VALUES ('2', 'user1', '123', 'ROLE_USER', '\0', '234@qq.com');
-INSERT INTO `user_table` VALUES ('3', 'user2', '123', 'ROLE_USER', '', '345@qq.com');
-
--- ----------------------------
 -- Table structure for userhoumework_table
 -- ----------------------------
 DROP TABLE IF EXISTS `userhoumework_table`;
@@ -322,3 +301,24 @@ CREATE TABLE `userhoumework_table` (
 -- ----------------------------
 -- Records of userhoumework_table
 -- ----------------------------
+
+-- ----------------------------
+-- Table structure for user_table
+-- ----------------------------
+DROP TABLE IF EXISTS `user_table`;
+CREATE TABLE `user_table` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(50) NOT NULL,
+  `password` varchar(50) NOT NULL,
+  `authorite` varchar(50) NOT NULL,
+  `enable` bit(1) DEFAULT NULL,
+  `email` varchar(50) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of user_table
+-- ----------------------------
+INSERT INTO `user_table` VALUES ('1', 'admin', '123', 'ROLE_SUPERVISOR', '', '123@126.com');
+INSERT INTO `user_table` VALUES ('2', 'user1', '123', 'ROLE_USER', '\0', '234@qq.com');
+INSERT INTO `user_table` VALUES ('3', 'user2', '123', 'ROLE_USER', '', '345@qq.com');
