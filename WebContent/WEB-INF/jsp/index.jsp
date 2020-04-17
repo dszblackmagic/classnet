@@ -59,7 +59,9 @@
 					</div>
 					<div class="c_spacing"></div>
 					<div class="ADBanner">
-						<img src="<f:message key="image_http_url"/>/images/ADBanner1.gif" />
+						<a href="/classnet/course/">
+							<img src="<f:message key="image_http_url"/>/images/ADBanner1.gif" />
+						</a>
 					</div>
 					<div class="c_spacing"></div>
 					<div id="moralEduSpace" class="goldenrod">
