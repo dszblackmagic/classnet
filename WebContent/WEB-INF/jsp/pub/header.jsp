@@ -25,6 +25,9 @@ else if(url.indexOf("/master/")!=-1){
 else if(url.indexOf("/teacher/")!=-1){
 	index="teacher";
 } 
+else if(url.indexOf("/course/")!=-1){
+	index="course";
+} 
 if(index=="index"){
 	document.write('<li id="topTabOn"><a href="<c:url value="/"/>"><span>网站首页</span></a></li>');
 }
@@ -66,6 +69,12 @@ if(index=="teacher"){
 }
 else{
 	document.write('<li><a href="<c:url value="/teacher/"/>"><span>教师队伍</span></a></li>');
+}
+if(index=="course"){
+	document.write('<li id="topTabOn"><a href="<c:url value="/course/"/>"><span>数字图像课程</span></a></li>');
+}
+else{
+	document.write('<li><a href="<c:url value="/course/"/>"><span>数字图像课程</span></a></li>');
 }
 </script>
 </ul>
