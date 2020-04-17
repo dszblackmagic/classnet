@@ -193,4 +193,9 @@
 	<bean name="/changeMenu" class="com.classnet.action.ChangeAction">
 		<property name="clazzMenuDao" ref="clazzMenuDao"></property>
 	</bean>
+	
+	<!-- 教师队伍 -->
+	<bean name="/teacher/index" class="com.classnet.action.teacher.TeacherIndexAction">
+		
+	</bean>
 </beans>
