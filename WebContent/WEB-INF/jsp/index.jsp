@@ -152,6 +152,39 @@
 						</dl>
 					</div>
 					<div class="c_spacing"></div>
+					<div id="instructionalResearch" class="mediumTurquoise" style="margin-top:20px;">
+						<dl>
+							<dt>
+								<em><a href="<c:url value="/teacher/"/>">教师队伍</a></em>
+								<ul class="colChildNav">
+								<c:forEach items="${teacherMenuList}" var="teacherMenu">
+									<li><a href="<c:url value="/teacher/menu.do?id=${teacherMenu.id}"/>"><c:out value="${teacherMenu.name}" /></a></li>
+								</c:forEach>
+								</ul>
+							</dt>
+							<dd>
+								<div class="col2">
+									<ul class="listStyle1">
+	            						<c:forEach items="${teacherList}" var="tecaher" varStatus="vs">
+	            						<c:if test="${vs.index<8}">
+	            						<li><a href="<c:url value="/teacher/teacher.do?id=${teacher.id}"/>" target="_blank">华师奥运抬水版</a><f:formatDate value="${teacher.pubtime}" pattern="MM-dd HH:mm"/></li>
+	            						</c:if>
+	            						</c:forEach>
+						            </ul>
+								</div>
+								<div class="col1">
+									<ul class="listStyle1">
+	            						<c:forEach items="${topicList}" var="topic" varStatus="vs">
+	            						<c:if test="${vs.index>7}">
+	            						<li><a href="<c:url value="/topic/topic.do?id=${topic.id}"/>" target="_blank">华师奥运抬水版</a><f:formatDate value="${topic.pubtime}" pattern="MM-dd HH:mm"/></li>
+	            						</c:if>
+	            						</c:forEach>
+						            </ul>
+								</div>
+							</dd>
+						</dl>
+					</div>
+					<div class="c_spacing"></div>
 				</div>
 				<!--侧边栏-->
 				<div id="sideBar">
